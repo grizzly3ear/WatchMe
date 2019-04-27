@@ -9,13 +9,15 @@
 import WatchKit
 import Foundation
 import Dispatch
-import CoreLocation
 
 class InterfaceController: WKInterfaceController {
 
     let workoutManager = WorkoutManager()
+    let locationManager = LocationManager()
     @IBOutlet weak var result: WKInterfaceLabel!
     @IBOutlet weak var safeButton: WKInterfaceButton!
+    var latitude: Double = 0.0
+    var longtitude: Double = 0.0
     
     var isSafe = true
     
@@ -24,6 +26,7 @@ class InterfaceController: WKInterfaceController {
         
         result.setText("You are secured!")
         workoutManager.delegate = self
+        locationManager.delegate = self
         safeButton.setHidden(true)
         // Configure interface objects here.
     }
@@ -66,18 +69,27 @@ extension InterfaceController: WorkoutManagerDelegate {
             print("hun nae")
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
                 if !self.isSafe {
-                    print("[SAY] SOS!!")
+                    print("[SAY] SOS!! at \(self.latitude), \(self.longtitude)")
                 }
             }
         } else {
             isSafe = true
             safeButton.setHidden(true)
             print("[SAY] Normal")
+            print("[SAY] SOS!! at \(self.latitude), \(self.longtitude)")
         }
     }
     
     func isInputWithinRange(_ input: Double, _ min: Double, _ max: Double) -> Bool {
         return input >= min && input <= max
+    }
+    
+}
+
+extension InterfaceController: LocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.latitude = (manager.location?.coordinate.latitude)!
+        self.longtitude = (manager.location?.coordinate.longitude)!
     }
     
 }
