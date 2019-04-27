@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002AA42C533FB3F73BBCE52B /* Pods_WatchMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE809496C0C31EBF0D6C1CF9 /* Pods_WatchMe.framework */; };
 		30E57C202274BDE60099777F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E57C1F2274BDE60099777F /* AppDelegate.swift */; };
 		30E57C222274BDE60099777F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E57C212274BDE60099777F /* ViewController.swift */; };
 		30E57C252274BDE60099777F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E57C232274BDE60099777F /* Main.storyboard */; };
@@ -20,6 +21,12 @@
 		30E57C452274BDE80099777F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E57C442274BDE80099777F /* ExtensionDelegate.swift */; };
 		30E57C472274BDE80099777F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E57C462274BDE80099777F /* NotificationController.swift */; };
 		30E57C492274BDE80099777F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E57C482274BDE80099777F /* Assets.xcassets */; };
+		30E57C5A2274BE790099777F /* WorkOutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E57C592274BE790099777F /* WorkOutManager.swift */; };
+		30E57C5D2274BEA70099777F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E57C5C2274BEA70099777F /* HealthKit.framework */; };
+		30E57C5F2274BF050099777F /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E57C5E2274BF050099777F /* MotionManager.swift */; };
+		30E57C612274BF2C0099777F /* RunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E57C602274BF2C0099777F /* RunningBuffer.swift */; };
+		849FFCAA7317FA0FE8610FE0 /* libPods-WatchMe WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A40766CDB3278449210355 /* libPods-WatchMe WatchKit App.a */; };
+		CCE5E45E4FD03BE6D8ABF6DD /* Pods_WatchMe_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD6C6A1D7FD88D6117E5BFF /* Pods_WatchMe_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		139EC6D6ECAEE27AEEB11709 /* Pods-WatchMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchMe.debug.xcconfig"; path = "Target Support Files/Pods-WatchMe/Pods-WatchMe.debug.xcconfig"; sourceTree = "<group>"; };
+		2BE5BF8444124A1BC5C2EB88 /* Pods-WatchMe WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchMe WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-WatchMe WatchKit App/Pods-WatchMe WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		30E57C1C2274BDE60099777F /* WatchMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E57C1F2274BDE60099777F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30E57C212274BDE60099777F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +92,18 @@
 		30E57C482274BDE80099777F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30E57C4A2274BDE80099777F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30E57C4B2274BDE80099777F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		30E57C592274BE790099777F /* WorkOutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutManager.swift; sourceTree = "<group>"; };
+		30E57C5B2274BEA70099777F /* WatchMe WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchMe WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		30E57C5C2274BEA70099777F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		30E57C5E2274BF050099777F /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		30E57C602274BF2C0099777F /* RunningBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningBuffer.swift; sourceTree = "<group>"; };
+		35A40766CDB3278449210355 /* libPods-WatchMe WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchMe WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD6C6A1D7FD88D6117E5BFF /* Pods_WatchMe_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchMe_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B79EEB80B524EE29832102 /* Pods-WatchMe WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchMe WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-WatchMe WatchKit Extension/Pods-WatchMe WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		8DBD241E11EB13010CA34B19 /* Pods-WatchMe WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchMe WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-WatchMe WatchKit App/Pods-WatchMe WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		A6142E567F19C0629FEAC0B2 /* Pods-WatchMe WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchMe WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-WatchMe WatchKit Extension/Pods-WatchMe WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		EA4DFCBF94FB73361B1CF3FA /* Pods-WatchMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchMe.release.xcconfig"; path = "Target Support Files/Pods-WatchMe/Pods-WatchMe.release.xcconfig"; sourceTree = "<group>"; };
+		EE809496C0C31EBF0D6C1CF9 /* Pods_WatchMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002AA42C533FB3F73BBCE52B /* Pods_WatchMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +119,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE5E45E4FD03BE6D8ABF6DD /* Pods_WatchMe_WatchKit_Extension.framework in Frameworks */,
+				30E57C5D2274BEA70099777F /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69690391E11CAD954DD8ECE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849FFCAA7317FA0FE8610FE0 /* libPods-WatchMe WatchKit App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +142,8 @@
 				30E57C322274BDE70099777F /* WatchMe WatchKit App */,
 				30E57C412274BDE80099777F /* WatchMe WatchKit Extension */,
 				30E57C1D2274BDE60099777F /* Products */,
+				FD896329B584185F30D0559C /* Pods */,
+				5038653266C8BB61AA9F24A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,14 +183,42 @@
 		30E57C412274BDE80099777F /* WatchMe WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				30E57C5B2274BEA70099777F /* WatchMe WatchKit Extension.entitlements */,
 				30E57C422274BDE80099777F /* InterfaceController.swift */,
 				30E57C442274BDE80099777F /* ExtensionDelegate.swift */,
 				30E57C462274BDE80099777F /* NotificationController.swift */,
 				30E57C482274BDE80099777F /* Assets.xcassets */,
 				30E57C4A2274BDE80099777F /* Info.plist */,
 				30E57C4B2274BDE80099777F /* PushNotificationPayload.apns */,
+				30E57C592274BE790099777F /* WorkOutManager.swift */,
+				30E57C5E2274BF050099777F /* MotionManager.swift */,
+				30E57C602274BF2C0099777F /* RunningBuffer.swift */,
 			);
 			path = "WatchMe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5038653266C8BB61AA9F24A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30E57C5C2274BEA70099777F /* HealthKit.framework */,
+				EE809496C0C31EBF0D6C1CF9 /* Pods_WatchMe.framework */,
+				35A40766CDB3278449210355 /* libPods-WatchMe WatchKit App.a */,
+				3FD6C6A1D7FD88D6117E5BFF /* Pods_WatchMe_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD896329B584185F30D0559C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				139EC6D6ECAEE27AEEB11709 /* Pods-WatchMe.debug.xcconfig */,
+				EA4DFCBF94FB73361B1CF3FA /* Pods-WatchMe.release.xcconfig */,
+				2BE5BF8444124A1BC5C2EB88 /* Pods-WatchMe WatchKit App.debug.xcconfig */,
+				8DBD241E11EB13010CA34B19 /* Pods-WatchMe WatchKit App.release.xcconfig */,
+				A6142E567F19C0629FEAC0B2 /* Pods-WatchMe WatchKit Extension.debug.xcconfig */,
+				81B79EEB80B524EE29832102 /* Pods-WatchMe WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30E57C562274BDE80099777F /* Build configuration list for PBXNativeTarget "WatchMe" */;
 			buildPhases = (
+				AC191B0DF55D4A31D998FA68 /* [CP] Check Pods Manifest.lock */,
 				30E57C182274BDE60099777F /* Sources */,
 				30E57C192274BDE60099777F /* Frameworks */,
 				30E57C1A2274BDE60099777F /* Resources */,
@@ -185,8 +248,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30E57C522274BDE80099777F /* Build configuration list for PBXNativeTarget "WatchMe WatchKit App" */;
 			buildPhases = (
+				AA2C62CBD44999A21AFB0698 /* [CP] Check Pods Manifest.lock */,
 				30E57C2C2274BDE70099777F /* Resources */,
 				30E57C512274BDE80099777F /* Embed App Extensions */,
+				69690391E11CAD954DD8ECE5 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30E57C4E2274BDE80099777F /* Build configuration list for PBXNativeTarget "WatchMe WatchKit Extension" */;
 			buildPhases = (
+				4F154DF73686BEE39FBAA4E3 /* [CP] Check Pods Manifest.lock */,
 				30E57C392274BDE80099777F /* Sources */,
 				30E57C3A2274BDE80099777F /* Frameworks */,
 				30E57C3B2274BDE80099777F /* Resources */,
@@ -233,6 +299,11 @@
 					};
 					30E57C3C2274BDE80099777F = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -286,6 +357,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F154DF73686BEE39FBAA4E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchMe WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA2C62CBD44999A21AFB0698 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchMe WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC191B0DF55D4A31D998FA68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30E57C182274BDE60099777F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -301,8 +441,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				30E57C472274BDE80099777F /* NotificationController.swift in Sources */,
+				30E57C5F2274BF050099777F /* MotionManager.swift in Sources */,
+				30E57C5A2274BE790099777F /* WorkOutManager.swift in Sources */,
 				30E57C452274BDE80099777F /* ExtensionDelegate.swift in Sources */,
 				30E57C432274BDE80099777F /* InterfaceController.swift in Sources */,
+				30E57C612274BF2C0099777F /* RunningBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,8 +610,10 @@
 		};
 		30E57C4F2274BDE80099777F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6142E567F19C0629FEAC0B2 /* Pods-WatchMe WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchMe WatchKit Extension/WatchMe WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WL8C79TUD;
 				INFOPLIST_FILE = "WatchMe WatchKit Extension/Info.plist";
@@ -489,8 +634,10 @@
 		};
 		30E57C502274BDE80099777F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B79EEB80B524EE29832102 /* Pods-WatchMe WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchMe WatchKit Extension/WatchMe WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WL8C79TUD;
 				INFOPLIST_FILE = "WatchMe WatchKit Extension/Info.plist";
@@ -511,6 +658,7 @@
 		};
 		30E57C532274BDE80099777F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BE5BF8444124A1BC5C2EB88 /* Pods-WatchMe WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -530,6 +678,7 @@
 		};
 		30E57C542274BDE80099777F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DBD241E11EB13010CA34B19 /* Pods-WatchMe WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -549,6 +698,7 @@
 		};
 		30E57C572274BDE80099777F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 139EC6D6ECAEE27AEEB11709 /* Pods-WatchMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +717,7 @@
 		};
 		30E57C582274BDE80099777F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4DFCBF94FB73361B1CF3FA /* Pods-WatchMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

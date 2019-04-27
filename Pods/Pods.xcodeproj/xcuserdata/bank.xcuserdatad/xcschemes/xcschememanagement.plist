@@ -4,21 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WatchMe WatchKit App (Notification).xcscheme_^#shared#^_</key>
+		<key>Pods-WatchMe WatchKit App.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>1</integer>
 		</dict>
-		<key>WatchMe WatchKit App.xcscheme_^#shared#^_</key>
+		<key>Pods-WatchMe WatchKit Extension.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>2</integer>
 		</dict>
-		<key>WatchMe.xcscheme_^#shared#^_</key>
+		<key>Pods-WatchMe.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>
