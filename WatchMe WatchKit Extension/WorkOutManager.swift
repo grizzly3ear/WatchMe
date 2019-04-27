@@ -2,13 +2,10 @@ import Foundation
 import HealthKit
 
 protocol WorkoutManagerDelegate: class {
-    func didUpdateMotion(_ manager: MotionManager, attitudeRoll: String, attitudePitch: String)
-    func didSOSCalling(attitudeRoll: Double, attitudePitch: Double)
+    func didUpdateMotion(_ manager: MotionManager, attitudeRoll: Double, attitudePitch: Double)
 }
 
 class WorkoutManager: MotionManagerDelegate {
-    
-    
     
     // MARK: Properties
     let motionManager = MotionManager()
@@ -62,12 +59,8 @@ class WorkoutManager: MotionManagerDelegate {
     }
     
     // MARK: MotionManagerDelegate
-    func didUpdateMotion(_ manager: MotionManager, attitudeRoll: String, attitudePitch: String) {
+    func didUpdateMotion(_ manager: MotionManager, attitudeRoll: Double, attitudePitch: Double) {
         delegate?.didUpdateMotion(manager, attitudeRoll: attitudeRoll, attitudePitch: attitudePitch)
-    }
-    
-    func didSOSCalling(attitudeRoll: Double, attitudePitch: Double) {
-        delegate?.didSOSCalling(attitudeRoll: attitudeRoll, attitudePitch: attitudePitch)
     }
     
 }

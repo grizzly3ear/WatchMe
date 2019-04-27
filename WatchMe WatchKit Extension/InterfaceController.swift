@@ -9,73 +9,75 @@
 import WatchKit
 import Foundation
 import Dispatch
+import CoreLocation
 
 class InterfaceController: WKInterfaceController {
 
     let workoutManager = WorkoutManager()
-    var active = false
     @IBOutlet weak var result: WKInterfaceLabel!
-    @IBOutlet weak var process: WKInterfaceLabel!
-    @IBOutlet weak var rollPreview: WKInterfaceLabel!
-    @IBOutlet weak var pitchPreview: WKInterfaceLabel!
+    @IBOutlet weak var safeButton: WKInterfaceButton!
     
-    var rollStr = ""
-    var pitchStr = ""
+    var isSafe = true
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         result.setText("You are secured!")
         workoutManager.delegate = self
+        safeButton.setHidden(true)
         // Configure interface objects here.
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        active = true
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
-        active = false
     }
     
     @IBAction func didStartPress() {
-        process.setText("Tracking. . .")
+        
         workoutManager.startWorkout()
     }
     
     @IBAction func didStopPress() {
-        process.setText("Stop...")
+        
         workoutManager.stopWorkout()
     }
     
+    @IBAction func didSafeButtonPress() {
+        isSafe = true
+        safeButton.setHidden(true)
+    }
 }
 
 extension InterfaceController: WorkoutManagerDelegate {
     
-    func didSOSCalling(attitudeRoll: Double, attitudePitch: Double) {
-        result.setText("Warning!!")
-        active = false
-        workoutManager.stopWorkout()
-        WKInterfaceDevice.current().play(.failure)
-    }
-    
-    func didUpdateMotion(_ manager: MotionManager, attitudeRoll attitideRoll: String, attitudePitch: String) {
-        DispatchQueue.main.async {
-            self.rollStr = attitideRoll
-            self.pitchStr = attitudePitch
-            self.updateLabels()
+    func didUpdateMotion(_ manager: MotionManager, attitudeRoll attitideRoll: Double, attitudePitch: Double) {
+        
+        if isInputWithinRange(attitideRoll, -1.7, 1) && isInputWithinRange(attitudePitch, -0.3, 0.4) {
+            
+            WKInterfaceDevice.current().play(.failure)
+            safeButton.setHidden(false)
+            isSafe = false
+            print("hun nae")
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
+                if !self.isSafe {
+                    print("[SAY] SOS!!")
+                }
+            }
+        } else {
+            isSafe = true
+            safeButton.setHidden(true)
+            print("[SAY] Normal")
         }
     }
     
-    func updateLabels() {
-        if active {
-            rollPreview.setText(rollStr)
-            pitchPreview.setText(pitchStr)
-        }
+    func isInputWithinRange(_ input: Double, _ min: Double, _ max: Double) -> Bool {
+        return input >= min && input <= max
     }
     
 }

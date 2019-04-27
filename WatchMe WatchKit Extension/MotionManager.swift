@@ -4,8 +4,7 @@ import WatchKit
 import os.log
 
 protocol MotionManagerDelegate: class {
-    func didUpdateMotion(_ manager: MotionManager, attitudeRoll: String, attitudePitch: String)
-    func didSOSCalling(attitudeRoll: Double, attitudePitch: Double)
+    func didUpdateMotion(_ manager: MotionManager, attitudeRoll: Double, attitudePitch: Double)
 }
 
 extension Date {
@@ -77,27 +76,11 @@ class MotionManager {
         let roll = deviceMotion.attitude.roll
         let pitch = deviceMotion.attitude.pitch
         
-        os_log("Motion: %@, %@, %@, %@",
-               String(timestamp),
-               String(deviceMotion.attitude.roll),
-               String(deviceMotion.attitude.pitch),
-               String(deviceMotion.attitude.yaw))
+//        os_log("Motion: %@, %@, %@",
+//               String(timestamp),
+//               String(roll),
+//               String(pitch))
         
-        if isInputWithinRange(roll, -1.2, -2) && isInputWithinRange(pitch, -0.3, 0.4) {
-            delegate?.didSOSCalling(attitudeRoll: roll, attitudePitch: pitch)
-            stopUpdates()
-        }
-        
-        updateMetricsDelegate();
-    }
-    
-    func isInputWithinRange(_ input: Double, _ min: Double, _ max: Double) -> Bool {
-        return input >= min && input <= max
-    }
-    
-    // MARK: Data and Delegate Management
-    
-    func updateMetricsDelegate() {
-        delegate?.didUpdateMotion(self, attitudeRoll: attitudeRoll, attitudePitch: attitudePitch)
+        delegate?.didUpdateMotion(self, attitudeRoll: roll, attitudePitch: pitch)
     }
 }

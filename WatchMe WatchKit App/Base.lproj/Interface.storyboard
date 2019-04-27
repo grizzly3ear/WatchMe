@@ -25,15 +25,17 @@
                                 <action selector="didStopPress" destination="AgC-eL-Hgc" id="5sn-kt-XVc"/>
                             </connections>
                         </button>
-                        <label alignment="left" text="Label" id="Eqe-Ut-uCJ"/>
-                        <label alignment="left" text="Label" id="QPd-Jd-fpb"/>
-                        <label alignment="left" text="Label" id="lCZ-gE-KcI"/>
+                        <button width="43" alignment="left" accessibilityLabel="OK" title="OK" id="i8I-nG-E6G">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="didSafeButtonPress" destination="AgC-eL-Hgc" id="Wj0-jc-aQW"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
-                        <outlet property="pitchPreview" destination="lCZ-gE-KcI" id="eOg-To-cfW"/>
-                        <outlet property="process" destination="Eqe-Ut-uCJ" id="WX3-3A-5wf"/>
                         <outlet property="result" destination="7gk-Fk-AHm" id="hQH-wX-HLc"/>
-                        <outlet property="rollPreview" destination="QPd-Jd-fpb" id="uqg-6n-HKw"/>
+                        <outlet property="safeButton" destination="i8I-nG-E6G" id="BeK-o4-cmo"/>
                     </connections>
                 </controller>
             </objects>
