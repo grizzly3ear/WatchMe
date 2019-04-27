@@ -72,7 +72,6 @@ class MotionManager {
     // MARK: Motion Processing
     
     func processDeviceMotion(_ deviceMotion: CMDeviceMotion) {
-        let timestamp = Date().millisecondsSince1970
         let roll = deviceMotion.attitude.roll
         let pitch = deviceMotion.attitude.pitch
         

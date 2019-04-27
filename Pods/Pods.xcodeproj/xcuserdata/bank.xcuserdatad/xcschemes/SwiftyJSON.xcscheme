@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CCE4DEABF72A13DEC84C14609BB97A47"
-               BuildableName = "Pods_WatchMe_WatchKit_Extension.framework"
-               BlueprintName = "Pods-WatchMe WatchKit Extension"
+               BlueprintIdentifier = "E1C3E72D607B9F2BE66D04D163D315E5"
+               BuildableName = "SwiftyJSON.framework"
+               BlueprintName = "SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CCE4DEABF72A13DEC84C14609BB97A47"
-            BuildableName = "Pods_WatchMe_WatchKit_Extension.framework"
-            BlueprintName = "Pods-WatchMe WatchKit Extension"
+            BlueprintIdentifier = "E1C3E72D607B9F2BE66D04D163D315E5"
+            BuildableName = "SwiftyJSON.framework"
+            BlueprintName = "SwiftyJSON"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

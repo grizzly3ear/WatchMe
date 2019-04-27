@@ -7,42 +7,116 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12E65492C8CD4BE4807D17489B465D2F /* Pods-WatchMe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 807615416528C9E80ADEF12848814736 /* Pods-WatchMe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		322EB9763085FB693C416E6752307A5B /* Pods-WatchMe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CF4447E902F0863453BBCABF054A77 /* Pods-WatchMe-dummy.m */; };
-		338B60E399BC829E062EDABEFB0F8054 /* Pods-WatchMe WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2318525CC8DFB49CADED046860089B2 /* Pods-WatchMe WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0121567724B2F43026BB226EAC48A285 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0246DA7718D7AB3B537891B66EA24BD8 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059D92B7BBFBEC53E9A3B6E11C5C3B3A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1B64AAFF7CDB86AF01701FFF70942 /* Response.swift */; };
+		0A39AF55285A3A4F7CBABB6D822FA4A3 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B3CA4E713CB0FFF106304EEF0DEF1 /* Alamofire.swift */; };
+		12E65492C8CD4BE4807D17489B465D2F /* Pods-WatchMe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93F85933F7E13E526C21B76D84EB0CFF /* Pods-WatchMe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D29D2ACADF961F69D32B06FA6A09E28 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844E580890A455AD8417C867F53694E /* Notifications.swift */; };
+		322EB9763085FB693C416E6752307A5B /* Pods-WatchMe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F3D84A40639B008A949B70CA39980D /* Pods-WatchMe-dummy.m */; };
+		355C18EEC82624A06A6CC93965258E33 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857BF36E9261A8BD3808EB6163FE3C52 /* Request.swift */; };
+		3E0749AF6C51BCF0E4A41CF1D6A76FED /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0830CB864819DCDD3341BB37E5E0032 /* DispatchQueue+Alamofire.swift */; };
 		50452220E14D8A0BB6F37EF4735CBD1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */; };
-		53A35D8660177D8671CDFA9684692829 /* Pods-WatchMe WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72A2A00D663A1A130E05E78BFC79FD /* Pods-WatchMe WatchKit Extension-dummy.m */; };
-		61C20A12BBEBCFAAEC0827C927B33577 /* Pods-WatchMe WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8999CB03F6FFFA064EA98FCC4E9822D1 /* Pods-WatchMe WatchKit App-dummy.m */; };
-		DFE034790012192AB947F8F8C63C3462 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */; };
+		60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5B8DE13BF4D8F7290A2355E397D3F /* Timeline.swift */; };
+		61C20A12BBEBCFAAEC0827C927B33577 /* Pods-WatchMe WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B21FBC28652663B29B2720C5C7D39D10 /* Pods-WatchMe WatchKit App-dummy.m */; };
+		6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EB574B82DEB1B0F57AB828256FCB7E /* ResponseSerialization.swift */; };
+		700D3D95AF9520CB227846DFD943A2DA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EA7A2B5E608C088D0D220EEBF1ACC /* ParameterEncoding.swift */; };
+		730AE04BFC74C237A5410143A0CBFE92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */; };
+		73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D612CC8BA9BA23950FC56C7D446323 /* NetworkReachabilityManager.swift */; };
+		75FACA2345F5FC1C2BF1EE7498DA6166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */; };
+		772911DA6E33D1CBBC30131B7C8BDBB3 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9503119E9B554AE6BAB8399F111CF96E /* Alamofire-dummy.m */; };
+		77E8F0EB9FFBE2E3EB0C77095C644606 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490ED5988528ED946A9AFF95523FF40 /* TaskDelegate.swift */; };
+		7E3538A6992A38276764936A9733493D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204818AD5A4347DE4F0E893504A2C9D /* AFError.swift */; };
+		8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90E188BECB488E1B148300C7CDE0A16 /* ServerTrustPolicy.swift */; };
+		9C1418C81B2E349B472F76536CD5E219 /* Pods-WatchMe WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2263F6316DEDFBF5354C36324968B5 /* Pods-WatchMe WatchKit Extension-dummy.m */; };
+		A1EC41966B261DCE460BCDE5124A1DBE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768BFFDF1B9DB04388C4F2B9F9D0098 /* SessionDelegate.swift */; };
+		A992AC2A8F765E44DF5C61D16D1DE3A2 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB46263FBF1708646858F2A550FB18 /* SwiftyJSON-dummy.m */; };
+		AA56769D8733D3F3E7976742D5ABA998 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BA0C62385A7EDB6EF01E02A3B5946C /* Validation.swift */; };
+		AEA829AB1A8AF2AD077A808AED6B178A /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497ABFB54F0758CA7AD6508B548EC36 /* MultipartFormData.swift */; };
+		B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F85B312F331E5B60FD5C75BAEEA124AB /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D072522060989E9964E36283F4A8D5CE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E26C699C64F7177C55929A5A90A28C /* SwiftyJSON.swift */; };
+		D0BE658529817970C4C9E6A902ED9F7F /* Pods-WatchMe WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06DF08DD592DCABD03D90012A9E4CD34 /* Pods-WatchMe WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3FA0AA634AAEA99AB3FABC36BB4958C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1C1451075E64C7178ECAC40680C5E /* SessionManager.swift */; };
+		EB0DD8CEA1A69867A30267439C970440 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED43DAC57BC55F440EAEAC1BBC1E7E /* Result.swift */; };
+		EE779A434176ABE14A966D6FF4A6CA1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7710D1FC03D2072C69EAFB9B8D8477C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1C3E72D607B9F2BE66D04D163D315E5;
+			remoteInfo = SwiftyJSON;
+		};
+		F00B671B042926DD347BFABFCDBCEA5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3383968E74B5371B20BB519B170DC7FD;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		006B407282FB04B3A6BE06609AE88824 /* Pods-WatchMe WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchMe WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		00A7B2927DAC4438B2D5EEEEB60F8489 /* Pods-WatchMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe.debug.xcconfig"; sourceTree = "<group>"; };
+		0246DA7718D7AB3B537891B66EA24BD8 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		0490ED5988528ED946A9AFF95523FF40 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		052E7224480D34DF8EC898643CD3E8BA /* Pods-WatchMe WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchMe WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		06DF08DD592DCABD03D90012A9E4CD34 /* Pods-WatchMe WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchMe WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		0768BFFDF1B9DB04388C4F2B9F9D0098 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2533CA043D58F90168CDD4B0FABBFF56 /* Pods-WatchMe WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
-		2B1AEE518A7607F7FFFD83A3D0F67430 /* Pods-WatchMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe-acknowledgements.plist"; sourceTree = "<group>"; };
-		361CB5ED6207A162664DC198E3F66460 /* Pods-WatchMe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WatchMe.modulemap"; sourceTree = "<group>"; };
-		3A72A2A00D663A1A130E05E78BFC79FD /* Pods-WatchMe WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchMe WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
-		5202EFCE274C95D754005C860FF223F7 /* Pods-WatchMe-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe-Info.plist"; sourceTree = "<group>"; };
-		5B40E8211522DE3E6C8A2DD426731988 /* libPods-WatchMe WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchMe WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EF586A6178FF5AD3D63BB40A951A307 /* Pods_WatchMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E177F8F6D65FC8AA5DD5C24052F5E86 /* Pods-WatchMe WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WatchMe WatchKit Extension.modulemap"; sourceTree = "<group>"; };
-		807615416528C9E80ADEF12848814736 /* Pods-WatchMe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchMe-umbrella.h"; sourceTree = "<group>"; };
-		82C495024A8B286CC8DD43141BA5857C /* Pods_WatchMe_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchMe_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8999CB03F6FFFA064EA98FCC4E9822D1 /* Pods-WatchMe WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchMe WatchKit App-dummy.m"; sourceTree = "<group>"; };
-		95CF4447E902F0863453BBCABF054A77 /* Pods-WatchMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchMe-dummy.m"; sourceTree = "<group>"; };
+		0829D293BCD9EE37CBE9E7378DF1A298 /* Pods-WatchMe WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchMe WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0FC7ACBAC994525DE16DED5F543E05C2 /* Pods-WatchMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe.release.xcconfig"; sourceTree = "<group>"; };
+		17BA0C62385A7EDB6EF01E02A3B5946C /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		1BD77540B60F5BC074137A1EFD0EFA67 /* Pods-WatchMe WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		21FB46263FBF1708646858F2A550FB18 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		3351ECE8642A2593026C171FA5791DEA /* Pods-WatchMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe-acknowledgements.plist"; sourceTree = "<group>"; };
+		391A86CA045DBB65CACB83B8F6031C1A /* libPods-WatchMe WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchMe WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39673C8FB2145F3D12873EB78742BD1F /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		46E5150B53794D28B0470EF5C1740409 /* Pods-WatchMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe.debug.xcconfig"; sourceTree = "<group>"; };
+		57ED43DAC57BC55F440EAEAC1BBC1E7E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		58C4AD14186135C32C8FBB44D5C5B37D /* Pods-WatchMe WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		5B8A78873D83461FA4B98672C6D58319 /* Pods-WatchMe WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		5DA1B64AAFF7CDB86AF01701FFF70942 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		5EC3F1085600EDB84F847FFA18F7C255 /* Pods-WatchMe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchMe-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F2263F6316DEDFBF5354C36324968B5 /* Pods-WatchMe WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchMe WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		6106209BF481E7A3A2755225ABF23835 /* Pods-WatchMe WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		62DF52B623F84B9EABAAA6BC120B5EE0 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		6F8EA7A2B5E608C088D0D220EEBF1ACC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		713A53760C98B3A6C2B31B643D5742F8 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7497ABFB54F0758CA7AD6508B548EC36 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		7626472F54C15E23214F995B396B5BCC /* Pods-WatchMe WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		76F124C9B79DAA59DC71BAA0AFDF3BBE /* Pods_WatchMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81FF8952DF549236F2C3988354EB60D0 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		857BF36E9261A8BD3808EB6163FE3C52 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		86583EE68974320C5FECF0F982BA24FD /* Pods-WatchMe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WatchMe.modulemap"; sourceTree = "<group>"; };
+		898D8943D5FB71831B953762475544AB /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		8FD623436E9A6FFBD29B48CF76DE78BA /* Pods-WatchMe-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe-Info.plist"; sourceTree = "<group>"; };
+		93F85933F7E13E526C21B76D84EB0CFF /* Pods-WatchMe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchMe-umbrella.h"; sourceTree = "<group>"; };
+		9503119E9B554AE6BAB8399F111CF96E /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		9A15E251FF88FC8821A7A751D5D07A1F /* Pods-WatchMe WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WatchMe WatchKit Extension.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA1C4BE401A561F2EA1E96D7AD5B6FC8 /* Pods-WatchMe WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		B4F8E8801CA6162A715745580EF545D9 /* Pods-WatchMe WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		CBF8F7928D4031D262E53BFBFD6636A4 /* Pods-WatchMe WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		CD0B66F40BC50EEF936A3B1ADB9753C8 /* Pods-WatchMe WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
-		D91FC4C044BA3CFEB39E83A6E4F57472 /* Pods-WatchMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe.release.xcconfig"; sourceTree = "<group>"; };
-		DCC974D416D5C1777C81539B12629F71 /* Pods-WatchMe WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		DD9833111FD2BB51E3A4D3A2945DCF14 /* Pods-WatchMe WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchMe WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DDB87D9775B7A13833D77D3EF04AA315 /* Pods-WatchMe WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchMe WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
-		F2318525CC8DFB49CADED046860089B2 /* Pods-WatchMe WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchMe WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
-		F8950DA4C77941039FAB8BF691C9CCCE /* Pods-WatchMe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchMe-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A36B3CA4E713CB0FFF106304EEF0DEF1 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		A600CE4BA770F49A8AEBDB3D7306DCB4 /* Pods-WatchMe WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		B0FA3B6B4AE85AA36F917BD72F3BFD74 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		B204818AD5A4347DE4F0E893504A2C9D /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		B21FBC28652663B29B2720C5C7D39D10 /* Pods-WatchMe WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchMe WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		B28A4E44291DD0DEC362A16E9A105DF1 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		B3EB574B82DEB1B0F57AB828256FCB7E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		B7E26C699C64F7177C55929A5A90A28C /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C0830CB864819DCDD3341BB37E5E0032 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		C0D612CC8BA9BA23950FC56C7D446323 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		CD589195F7E385ABCD93EDC13CE555CB /* Pods-WatchMe WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchMe WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		D27C35A36CC357400214D00FFA1C5273 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D386EFBFC8B955B171640358B0E146CE /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		D3BE8551960EE829371756FC91416985 /* Pods_WatchMe_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchMe_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D844E580890A455AD8417C867F53694E /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		D90E188BECB488E1B148300C7CDE0A16 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		DC68DA575579E2D894048AE8102544B5 /* Pods-WatchMe WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchMe WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E6F3D84A40639B008A949B70CA39980D /* Pods-WatchMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchMe-dummy.m"; sourceTree = "<group>"; };
+		F0F1C1451075E64C7178ECAC40680C5E /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		F3F5B8DE13BF4D8F7290A2355E397D3F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		F69FC002862EF92F9067DAF2572A6A50 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F85B312F331E5B60FD5C75BAEEA124AB /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -55,11 +129,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91041A646CC86B395410124D9D54192A /* Frameworks */ = {
+		72F9252616D07D3FA0E6EA119AF37865 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFE034790012192AB947F8F8C63C3462 /* Foundation.framework in Frameworks */,
+				EE779A434176ABE14A966D6FF4A6CA1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78F2F6236FFA21194C310A1A743A5D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730AE04BFC74C237A5410143A0CBFE92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1626ADC3A7EC435D2722B3173355D36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FACA2345F5FC1C2BF1EE7498DA6166 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +163,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0109B6716A6F1EB944B33B18718579D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F69FC002862EF92F9067DAF2572A6A50 /* Alamofire.modulemap */,
+				39673C8FB2145F3D12873EB78742BD1F /* Alamofire.xcconfig */,
+				9503119E9B554AE6BAB8399F111CF96E /* Alamofire-dummy.m */,
+				D386EFBFC8B955B171640358B0E146CE /* Alamofire-Info.plist */,
+				B28A4E44291DD0DEC362A16E9A105DF1 /* Alamofire-prefix.pch */,
+				F85B312F331E5B60FD5C75BAEEA124AB /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
 		0444D2915AF645810C79194BF3893DB4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,38 +185,40 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		06CA238466EC03E3A8261F362D1D9B8D /* Pods-WatchMe WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				6E177F8F6D65FC8AA5DD5C24052F5E86 /* Pods-WatchMe WatchKit Extension.modulemap */,
-				DD9833111FD2BB51E3A4D3A2945DCF14 /* Pods-WatchMe WatchKit Extension-acknowledgements.markdown */,
-				2533CA043D58F90168CDD4B0FABBFF56 /* Pods-WatchMe WatchKit Extension-acknowledgements.plist */,
-				3A72A2A00D663A1A130E05E78BFC79FD /* Pods-WatchMe WatchKit Extension-dummy.m */,
-				DDB87D9775B7A13833D77D3EF04AA315 /* Pods-WatchMe WatchKit Extension-Info.plist */,
-				F2318525CC8DFB49CADED046860089B2 /* Pods-WatchMe WatchKit Extension-umbrella.h */,
-				CBF8F7928D4031D262E53BFBFD6636A4 /* Pods-WatchMe WatchKit Extension.debug.xcconfig */,
-				B4F8E8801CA6162A715745580EF545D9 /* Pods-WatchMe WatchKit Extension.release.xcconfig */,
-			);
-			name = "Pods-WatchMe WatchKit Extension";
-			path = "Target Support Files/Pods-WatchMe WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		2BCD6EBB8F748F4F3D764AC29E576725 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5B40E8211522DE3E6C8A2DD426731988 /* libPods-WatchMe WatchKit App.a */,
-				5EF586A6178FF5AD3D63BB40A951A307 /* Pods_WatchMe.framework */,
-				82C495024A8B286CC8DD43141BA5857C /* Pods_WatchMe_WatchKit_Extension.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3C93E1ADB60F5A9CEF07230E92128A7B /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
 				FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */,
 			);
 			name = watchOS;
+			sourceTree = "<group>";
+		};
+		3E56A2ED2245AED83B57083B023E9202 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D27C35A36CC357400214D00FFA1C5273 /* Alamofire.framework */,
+				391A86CA045DBB65CACB83B8F6031C1A /* libPods-WatchMe WatchKit App.a */,
+				76F124C9B79DAA59DC71BAA0AFDF3BBE /* Pods_WatchMe.framework */,
+				D3BE8551960EE829371756FC91416985 /* Pods_WatchMe_WatchKit_Extension.framework */,
+				713A53760C98B3A6C2B31B643D5742F8 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49EB821C9D152CEB387C40317C4FA10A /* Pods-WatchMe */ = {
+			isa = PBXGroup;
+			children = (
+				86583EE68974320C5FECF0F982BA24FD /* Pods-WatchMe.modulemap */,
+				5EC3F1085600EDB84F847FFA18F7C255 /* Pods-WatchMe-acknowledgements.markdown */,
+				3351ECE8642A2593026C171FA5791DEA /* Pods-WatchMe-acknowledgements.plist */,
+				E6F3D84A40639B008A949B70CA39980D /* Pods-WatchMe-dummy.m */,
+				8FD623436E9A6FFBD29B48CF76DE78BA /* Pods-WatchMe-Info.plist */,
+				93F85933F7E13E526C21B76D84EB0CFF /* Pods-WatchMe-umbrella.h */,
+				46E5150B53794D28B0470EF5C1740409 /* Pods-WatchMe.debug.xcconfig */,
+				0FC7ACBAC994525DE16DED5F543E05C2 /* Pods-WatchMe.release.xcconfig */,
+			);
+			name = "Pods-WatchMe";
+			path = "Target Support Files/Pods-WatchMe";
 			sourceTree = "<group>";
 		};
 		54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */ = {
@@ -124,33 +230,92 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ACA413B661698E8A57A212B1A213F968 /* Pods-WatchMe WatchKit App */ = {
+		5D24C7BC0FC7EE340514FB825C0F315C /* Pods-WatchMe WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				006B407282FB04B3A6BE06609AE88824 /* Pods-WatchMe WatchKit App-acknowledgements.markdown */,
-				CD0B66F40BC50EEF936A3B1ADB9753C8 /* Pods-WatchMe WatchKit App-acknowledgements.plist */,
-				8999CB03F6FFFA064EA98FCC4E9822D1 /* Pods-WatchMe WatchKit App-dummy.m */,
-				AA1C4BE401A561F2EA1E96D7AD5B6FC8 /* Pods-WatchMe WatchKit App.debug.xcconfig */,
-				DCC974D416D5C1777C81539B12629F71 /* Pods-WatchMe WatchKit App.release.xcconfig */,
+				9A15E251FF88FC8821A7A751D5D07A1F /* Pods-WatchMe WatchKit Extension.modulemap */,
+				0829D293BCD9EE37CBE9E7378DF1A298 /* Pods-WatchMe WatchKit Extension-acknowledgements.markdown */,
+				5B8A78873D83461FA4B98672C6D58319 /* Pods-WatchMe WatchKit Extension-acknowledgements.plist */,
+				5F2263F6316DEDFBF5354C36324968B5 /* Pods-WatchMe WatchKit Extension-dummy.m */,
+				052E7224480D34DF8EC898643CD3E8BA /* Pods-WatchMe WatchKit Extension-frameworks.sh */,
+				7626472F54C15E23214F995B396B5BCC /* Pods-WatchMe WatchKit Extension-Info.plist */,
+				06DF08DD592DCABD03D90012A9E4CD34 /* Pods-WatchMe WatchKit Extension-umbrella.h */,
+				CD589195F7E385ABCD93EDC13CE555CB /* Pods-WatchMe WatchKit Extension.debug.xcconfig */,
+				58C4AD14186135C32C8FBB44D5C5B37D /* Pods-WatchMe WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-WatchMe WatchKit Extension";
+			path = "Target Support Files/Pods-WatchMe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		62C662CC5CC7682E702BA3E26C3F8A9D /* Pods-WatchMe WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DC68DA575579E2D894048AE8102544B5 /* Pods-WatchMe WatchKit App-acknowledgements.markdown */,
+				1BD77540B60F5BC074137A1EFD0EFA67 /* Pods-WatchMe WatchKit App-acknowledgements.plist */,
+				B21FBC28652663B29B2720C5C7D39D10 /* Pods-WatchMe WatchKit App-dummy.m */,
+				6106209BF481E7A3A2755225ABF23835 /* Pods-WatchMe WatchKit App.debug.xcconfig */,
+				A600CE4BA770F49A8AEBDB3D7306DCB4 /* Pods-WatchMe WatchKit App.release.xcconfig */,
 			);
 			name = "Pods-WatchMe WatchKit App";
 			path = "Target Support Files/Pods-WatchMe WatchKit App";
 			sourceTree = "<group>";
 		};
-		BC34217644289BA975F448BDBD1C3D7A /* Pods-WatchMe */ = {
+		67614593FCCAAA1E2055C5A1244376C7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				361CB5ED6207A162664DC198E3F66460 /* Pods-WatchMe.modulemap */,
-				F8950DA4C77941039FAB8BF691C9CCCE /* Pods-WatchMe-acknowledgements.markdown */,
-				2B1AEE518A7607F7FFFD83A3D0F67430 /* Pods-WatchMe-acknowledgements.plist */,
-				95CF4447E902F0863453BBCABF054A77 /* Pods-WatchMe-dummy.m */,
-				5202EFCE274C95D754005C860FF223F7 /* Pods-WatchMe-Info.plist */,
-				807615416528C9E80ADEF12848814736 /* Pods-WatchMe-umbrella.h */,
-				00A7B2927DAC4438B2D5EEEEB60F8489 /* Pods-WatchMe.debug.xcconfig */,
-				D91FC4C044BA3CFEB39E83A6E4F57472 /* Pods-WatchMe.release.xcconfig */,
+				81FF8952DF549236F2C3988354EB60D0 /* SwiftyJSON.modulemap */,
+				62DF52B623F84B9EABAAA6BC120B5EE0 /* SwiftyJSON.xcconfig */,
+				21FB46263FBF1708646858F2A550FB18 /* SwiftyJSON-dummy.m */,
+				898D8943D5FB71831B953762475544AB /* SwiftyJSON-Info.plist */,
+				B0FA3B6B4AE85AA36F917BD72F3BFD74 /* SwiftyJSON-prefix.pch */,
+				0246DA7718D7AB3B537891B66EA24BD8 /* SwiftyJSON-umbrella.h */,
 			);
-			name = "Pods-WatchMe";
-			path = "Target Support Files/Pods-WatchMe";
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		686EBC4A91137B91723BBDAA46CCB885 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49EB821C9D152CEB387C40317C4FA10A /* Pods-WatchMe */,
+				62C662CC5CC7682E702BA3E26C3F8A9D /* Pods-WatchMe WatchKit App */,
+				5D24C7BC0FC7EE340514FB825C0F315C /* Pods-WatchMe WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7187BAA7AFCD9D5159B8A7FF83BFC218 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFC253CEC688C0C5347853A605B05216 /* Alamofire */,
+				E6F85C7DAFC9F44A6DDEDAB592F6A027 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFC253CEC688C0C5347853A605B05216 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				B204818AD5A4347DE4F0E893504A2C9D /* AFError.swift */,
+				A36B3CA4E713CB0FFF106304EEF0DEF1 /* Alamofire.swift */,
+				C0830CB864819DCDD3341BB37E5E0032 /* DispatchQueue+Alamofire.swift */,
+				7497ABFB54F0758CA7AD6508B548EC36 /* MultipartFormData.swift */,
+				C0D612CC8BA9BA23950FC56C7D446323 /* NetworkReachabilityManager.swift */,
+				D844E580890A455AD8417C867F53694E /* Notifications.swift */,
+				6F8EA7A2B5E608C088D0D220EEBF1ACC /* ParameterEncoding.swift */,
+				857BF36E9261A8BD3808EB6163FE3C52 /* Request.swift */,
+				5DA1B64AAFF7CDB86AF01701FFF70942 /* Response.swift */,
+				B3EB574B82DEB1B0F57AB828256FCB7E /* ResponseSerialization.swift */,
+				57ED43DAC57BC55F440EAEAC1BBC1E7E /* Result.swift */,
+				D90E188BECB488E1B148300C7CDE0A16 /* ServerTrustPolicy.swift */,
+				0768BFFDF1B9DB04388C4F2B9F9D0098 /* SessionDelegate.swift */,
+				F0F1C1451075E64C7178ECAC40680C5E /* SessionManager.swift */,
+				0490ED5988528ED946A9AFF95523FF40 /* TaskDelegate.swift */,
+				F3F5B8DE13BF4D8F7290A2355E397D3F /* Timeline.swift */,
+				17BA0C62385A7EDB6EF01E02A3B5946C /* Validation.swift */,
+				0109B6716A6F1EB944B33B18718579D5 /* Support Files */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -158,37 +323,37 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */,
-				2BCD6EBB8F748F4F3D764AC29E576725 /* Products */,
-				DF6B84702A021D34E7A952BC905C7495 /* Targets Support Files */,
+				7187BAA7AFCD9D5159B8A7FF83BFC218 /* Pods */,
+				3E56A2ED2245AED83B57083B023E9202 /* Products */,
+				686EBC4A91137B91723BBDAA46CCB885 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DF6B84702A021D34E7A952BC905C7495 /* Targets Support Files */ = {
+		E6F85C7DAFC9F44A6DDEDAB592F6A027 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				BC34217644289BA975F448BDBD1C3D7A /* Pods-WatchMe */,
-				ACA413B661698E8A57A212B1A213F968 /* Pods-WatchMe WatchKit App */,
-				06CA238466EC03E3A8261F362D1D9B8D /* Pods-WatchMe WatchKit Extension */,
+				B7E26C699C64F7177C55929A5A90A28C /* SwiftyJSON.swift */,
+				67614593FCCAAA1E2055C5A1244376C7 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		23D70D9651451F43E7E8CC1A87B4B7E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DF6C8C67DA10C344EE50AB567C787B9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				12E65492C8CD4BE4807D17489B465D2F /* Pods-WatchMe-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D103104E042D09DD13BD3B74765D3B1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				338B60E399BC829E062EDABEFB0F8054 /* Pods-WatchMe WatchKit Extension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +364,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C33F6A58C430C05891792B52B06CD37A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BE658529817970C4C9E6A902ED9F7F /* Pods-WatchMe WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D924EBB9613F40EE67213389FA223403 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0121567724B2F43026BB226EAC48A285 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3383968E74B5371B20BB519B170DC7FD /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E87124444A44B7DB55208E7FEC21D331 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				23D70D9651451F43E7E8CC1A87B4B7E9 /* Headers */,
+				A1C8B029F600160149A2404C342F6E50 /* Sources */,
+				F1626ADC3A7EC435D2722B3173355D36 /* Frameworks */,
+				28FF73341543B6F0A7DF3C20CFFEA0AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = D27C35A36CC357400214D00FFA1C5273 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8BCD13ADEC7A1449906FCE0CC284E6AF /* Pods-WatchMe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E000B9573D5120D817682938882794A /* Build configuration list for PBXNativeTarget "Pods-WatchMe" */;
@@ -217,25 +416,45 @@
 			);
 			name = "Pods-WatchMe";
 			productName = "Pods-WatchMe";
-			productReference = 5EF586A6178FF5AD3D63BB40A951A307 /* Pods_WatchMe.framework */;
+			productReference = 76F124C9B79DAA59DC71BAA0AFDF3BBE /* Pods_WatchMe.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8F8CE229A15E6D9E0BF6E7472D1B1D9B /* Pods-WatchMe WatchKit Extension */ = {
+		CCE4DEABF72A13DEC84C14609BB97A47 /* Pods-WatchMe WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1662FFE303FB013C99A9C574F509668 /* Build configuration list for PBXNativeTarget "Pods-WatchMe WatchKit Extension" */;
+			buildConfigurationList = F5C9DBA7CD9631BAD1039F14C94AAAF2 /* Build configuration list for PBXNativeTarget "Pods-WatchMe WatchKit Extension" */;
 			buildPhases = (
-				8D103104E042D09DD13BD3B74765D3B1 /* Headers */,
-				C61D5C583C5F515501CBD2217DE8FD44 /* Sources */,
-				91041A646CC86B395410124D9D54192A /* Frameworks */,
-				0E835EBD80F95BB5FA6A1F631616D092 /* Resources */,
+				C33F6A58C430C05891792B52B06CD37A /* Headers */,
+				F9C95F1AB12D7A499C92B1EA69648877 /* Sources */,
+				78F2F6236FFA21194C310A1A743A5D9E /* Frameworks */,
+				446698518374B07EB41A99B129B410DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D63D0498233DFE864E8A89BDC07FD8C0 /* PBXTargetDependency */,
+				00AB9BE8BA37DA942CD1C870DE80C384 /* PBXTargetDependency */,
+			);
+			name = "Pods-WatchMe WatchKit Extension";
+			productName = "Pods-WatchMe WatchKit Extension";
+			productReference = D3BE8551960EE829371756FC91416985 /* Pods_WatchMe_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1C3E72D607B9F2BE66D04D163D315E5 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAA2D7489ECBD58AC3B0D2EC05B6878 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				D924EBB9613F40EE67213389FA223403 /* Headers */,
+				2CCE520D10A1773A2949A2A13913FAEC /* Sources */,
+				72F9252616D07D3FA0E6EA119AF37865 /* Frameworks */,
+				3B620495871371D8A0484B9286E98AE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-WatchMe WatchKit Extension";
-			productName = "Pods-WatchMe WatchKit Extension";
-			productReference = 82C495024A8B286CC8DD43141BA5857C /* Pods_WatchMe_WatchKit_Extension.framework */;
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 713A53760C98B3A6C2B31B643D5742F8 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F8FCB910F8E96DA4BABA5CBCD12480EF /* Pods-WatchMe WatchKit App */ = {
@@ -252,7 +471,7 @@
 			);
 			name = "Pods-WatchMe WatchKit App";
 			productName = "Pods-WatchMe WatchKit App";
-			productReference = 5B40E8211522DE3E6C8A2DD426731988 /* libPods-WatchMe WatchKit App.a */;
+			productReference = 391A86CA045DBB65CACB83B8F6031C1A /* libPods-WatchMe WatchKit App.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -266,26 +485,42 @@
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 2BCD6EBB8F748F4F3D764AC29E576725 /* Products */;
+			productRefGroup = 3E56A2ED2245AED83B57083B023E9202 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3383968E74B5371B20BB519B170DC7FD /* Alamofire */,
 				8BCD13ADEC7A1449906FCE0CC284E6AF /* Pods-WatchMe */,
 				F8FCB910F8E96DA4BABA5CBCD12480EF /* Pods-WatchMe WatchKit App */,
-				8F8CE229A15E6D9E0BF6E7472D1B1D9B /* Pods-WatchMe WatchKit Extension */,
+				CCE4DEABF72A13DEC84C14609BB97A47 /* Pods-WatchMe WatchKit Extension */,
+				E1C3E72D607B9F2BE66D04D163D315E5 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0E835EBD80F95BB5FA6A1F631616D092 /* Resources */ = {
+		28FF73341543B6F0A7DF3C20CFFEA0AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B620495871371D8A0484B9286E98AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446698518374B07EB41A99B129B410DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,11 +545,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C61D5C583C5F515501CBD2217DE8FD44 /* Sources */ = {
+		2CCE520D10A1773A2949A2A13913FAEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53A35D8660177D8671CDFA9684692829 /* Pods-WatchMe WatchKit Extension-dummy.m in Sources */,
+				A992AC2A8F765E44DF5C61D16D1DE3A2 /* SwiftyJSON-dummy.m in Sources */,
+				D072522060989E9964E36283F4A8D5CE /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C8B029F600160149A2404C342F6E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3538A6992A38276764936A9733493D /* AFError.swift in Sources */,
+				772911DA6E33D1CBBC30131B7C8BDBB3 /* Alamofire-dummy.m in Sources */,
+				0A39AF55285A3A4F7CBABB6D822FA4A3 /* Alamofire.swift in Sources */,
+				3E0749AF6C51BCF0E4A41CF1D6A76FED /* DispatchQueue+Alamofire.swift in Sources */,
+				AEA829AB1A8AF2AD077A808AED6B178A /* MultipartFormData.swift in Sources */,
+				73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */,
+				1D29D2ACADF961F69D32B06FA6A09E28 /* Notifications.swift in Sources */,
+				700D3D95AF9520CB227846DFD943A2DA /* ParameterEncoding.swift in Sources */,
+				355C18EEC82624A06A6CC93965258E33 /* Request.swift in Sources */,
+				059D92B7BBFBEC53E9A3B6E11C5C3B3A /* Response.swift in Sources */,
+				6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */,
+				EB0DD8CEA1A69867A30267439C970440 /* Result.swift in Sources */,
+				8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */,
+				A1EC41966B261DCE460BCDE5124A1DBE /* SessionDelegate.swift in Sources */,
+				D3FA0AA634AAEA99AB3FABC36BB4958C /* SessionManager.swift in Sources */,
+				77E8F0EB9FFBE2E3EB0C77095C644606 /* TaskDelegate.swift in Sources */,
+				60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */,
+				AA56769D8733D3F3E7976742D5ABA998 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,12 +587,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9C95F1AB12D7A499C92B1EA69648877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1418C81B2E349B472F76536CD5E219 /* Pods-WatchMe WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00AB9BE8BA37DA942CD1C870DE80C384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = E1C3E72D607B9F2BE66D04D163D315E5 /* SwiftyJSON */;
+			targetProxy = 7710D1FC03D2072C69EAFB9B8D8477C3 /* PBXContainerItemProxy */;
+		};
+		D63D0498233DFE864E8A89BDC07FD8C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 3383968E74B5371B20BB519B170DC7FD /* Alamofire */;
+			targetProxy = F00B671B042926DD347BFABFCDBCEA5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		06F828AF4CF6EF2FED41D1C87F9E3F99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00A7B2927DAC4438B2D5EEEEB60F8489 /* Pods-WatchMe.debug.xcconfig */;
+			baseConfigurationReference = 46E5150B53794D28B0470EF5C1740409 /* Pods-WatchMe.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -431,7 +715,7 @@
 		};
 		1E1A6AECCD4FE0879AF1477C76375CD3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCC974D416D5C1777C81539B12629F71 /* Pods-WatchMe WatchKit App.release.xcconfig */;
+			baseConfigurationReference = A600CE4BA770F49A8AEBDB3D7306DCB4 /* Pods-WatchMe WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -516,9 +800,46 @@
 			};
 			name = Debug;
 		};
-		299FE3FD3A5948948F7B3559F4BD55E8 /* Release */ = {
+		6A0AD4F1C69F3C9205BFC26ECFB784B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4F8E8801CA6162A715745580EF545D9 /* Pods-WatchMe WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = 62DF52B623F84B9EABAAA6BC120B5EE0 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		73DDF6A307CF8B8374076474C7C9D49E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58C4AD14186135C32C8FBB44D5C5B37D /* Pods-WatchMe WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -555,11 +876,10 @@
 			};
 			name = Release;
 		};
-		BD66BE0EC4F83A7458736DCD70D1F90B /* Debug */ = {
+		A77C389D6B7CAB4EF477A91F96E8F4E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBF8F7928D4031D262E53BFBFD6636A4 /* Pods-WatchMe WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = 39673C8FB2145F3D12873EB78742BD1F /* Alamofire.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -570,32 +890,104 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WatchMe WatchKit Extension/Pods-WatchMe WatchKit Extension-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WatchMe WatchKit Extension/Pods-WatchMe WatchKit Extension.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A8C5E47C89691758F9E760CB8ADFB31A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62DF52B623F84B9EABAAA6BC120B5EE0 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		B00829426ACDFC5ECF4C1C81A37857BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39673C8FB2145F3D12873EB78742BD1F /* Alamofire.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		C71A145500F04F7D47EDD816CDD161AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D91FC4C044BA3CFEB39E83A6E4F57472 /* Pods-WatchMe.release.xcconfig */;
+			baseConfigurationReference = 0FC7ACBAC994525DE16DED5F543E05C2 /* Pods-WatchMe.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -632,9 +1024,47 @@
 			};
 			name = Release;
 		};
+		F55C398316239C6AB89D1560BBFF15BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD589195F7E385ABCD93EDC13CE555CB /* Pods-WatchMe WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchMe WatchKit Extension/Pods-WatchMe WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchMe WatchKit Extension/Pods-WatchMe WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
 		FA28767FF850696F0944FAFCA491E632 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA1C4BE401A561F2EA1E96D7AD5B6FC8 /* Pods-WatchMe WatchKit App.debug.xcconfig */;
+			baseConfigurationReference = 6106209BF481E7A3A2755225ABF23835 /* Pods-WatchMe WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -682,11 +1112,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1662FFE303FB013C99A9C574F509668 /* Build configuration list for PBXNativeTarget "Pods-WatchMe WatchKit Extension" */ = {
+		E87124444A44B7DB55208E7FEC21D331 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD66BE0EC4F83A7458736DCD70D1F90B /* Debug */,
-				299FE3FD3A5948948F7B3559F4BD55E8 /* Release */,
+				B00829426ACDFC5ECF4C1C81A37857BC /* Debug */,
+				A77C389D6B7CAB4EF477A91F96E8F4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5C9DBA7CD9631BAD1039F14C94AAAF2 /* Build configuration list for PBXNativeTarget "Pods-WatchMe WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F55C398316239C6AB89D1560BBFF15BA /* Debug */,
+				73DDF6A307CF8B8374076474C7C9D49E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAA2D7489ECBD58AC3B0D2EC05B6878 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C5E47C89691758F9E760CB8ADFB31A /* Debug */,
+				6A0AD4F1C69F3C9205BFC26ECFB784B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

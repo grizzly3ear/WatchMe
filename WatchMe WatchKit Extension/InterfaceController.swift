@@ -1,25 +1,19 @@
-//
-//  InterfaceController.swift
-//  WatchMe WatchKit Extension
-//
-//  Created by Bank on 27/4/2562 BE.
-//  Copyright © 2562 Bank. All rights reserved.
-//
-
 import WatchKit
 import Foundation
-import Dispatch
+import Alamofire
 
 class InterfaceController: WKInterfaceController {
 
     let workoutManager = WorkoutManager()
     let locationManager = LocationManager()
+    let request = HttpRequestManager("http://138.91.37.216:3001")
     @IBOutlet weak var result: WKInterfaceLabel!
     @IBOutlet weak var safeButton: WKInterfaceButton!
     var latitude: Double = 0.0
     var longtitude: Double = 0.0
     
     var isSafe = true
+    var isFire = false
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -62,21 +56,30 @@ extension InterfaceController: WorkoutManagerDelegate {
     func didUpdateMotion(_ manager: MotionManager, attitudeRoll attitideRoll: Double, attitudePitch: Double) {
         
         if isInputWithinRange(attitideRoll, -1.7, 1) && isInputWithinRange(attitudePitch, -0.3, 0.4) {
-            
+            print("\(attitideRoll), \(attitudePitch)")
             WKInterfaceDevice.current().play(.failure)
             safeButton.setHidden(false)
             isSafe = false
-            print("hun nae")
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
-                if !self.isSafe {
-                    print("[SAY] SOS!! at \(self.latitude), \(self.longtitude)")
+                if !self.isSafe && !self.isFire {
+                    
+                    self.request.post("status", [
+                        "userId": Int64(59130500089),
+                        "username": "Bank",
+                        "position": [
+                            "lat": self.latitude,
+                            "lon": self.longtitude
+                        ],
+                        "status": "sos",
+                        "heartrate": 100
+                        ]
+                    )
+                    self.isFire = true
                 }
             }
         } else {
             isSafe = true
             safeButton.setHidden(true)
-            print("[SAY] Normal")
-            print("[SAY] SOS!! at \(self.latitude), \(self.longtitude)")
         }
     }
     
