@@ -14,6 +14,7 @@ class InterfaceController: WKInterfaceController {
     
     var isSafe = true
     var isFire = false
+    var isCounting = false
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -31,17 +32,20 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+ 
     }
     
     @IBAction func didStartPress() {
-        
+        result.setText("You are secured!!")
         workoutManager.startWorkout()
     }
     
     @IBAction func didStopPress() {
-        
+        result.setText("Take a break :)")
+        isFire = false
+        isSafe = true
+        isCounting = false
         workoutManager.stopWorkout()
     }
     
@@ -55,31 +59,34 @@ extension InterfaceController: WorkoutManagerDelegate {
     
     func didUpdateMotion(_ manager: MotionManager, attitudeRoll attitideRoll: Double, attitudePitch: Double) {
         
-        if isInputWithinRange(attitideRoll, -1.7, 1) && isInputWithinRange(attitudePitch, -0.3, 0.4) {
+        if isInputWithinRange(attitideRoll, -1.5, -1) && isInputWithinRange(attitudePitch, -0.3, 0.4) {
             print("\(attitideRoll), \(attitudePitch)")
             WKInterfaceDevice.current().play(.failure)
             safeButton.setHidden(false)
             isSafe = false
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
-                if !self.isSafe && !self.isFire {
-                    
-                    self.request.post("status", [
-                        "userId": Int64(59130500089),
-                        "username": "Bank",
-                        "position": [
-                            "lat": self.latitude,
-                            "lon": self.longtitude
-                        ],
-                        "status": "sos",
-                        "heartrate": 100
-                        ]
-                    )
-                    self.isFire = true
+            
+            if !isCounting {
+                isCounting = true
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
+                    if !self.isSafe && !self.isFire {
+                        
+                        self.request.post("status", [
+                            "userId": Int64(59130500089),
+                            "username": "Bank AhHa Vitsarut",
+                            "position": [
+                                "lat": 13.7393329,
+                                "lon": 100.5263047
+                            ],
+                            "status": "sos",
+                            "heartRate": Int.random(in: 98...130)
+                        ])
+                    }
+                    self.isCounting = false
                 }
             }
         } else {
             isSafe = true
-            safeButton.setHidden(true)
         }
     }
     
